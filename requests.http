@@ -1,0 +1,47 @@
+## CTRL + ALT + R
+
+### get all courses
+GET http://localhost:3000/api/courses
+
+
+### get course
+GET http://localhost:3000/api/courses/1
+
+
+
+### post course
+POST http://localhost:3000/api/courses
+Content-Type: application/json
+
+{ "name": "ArrowBlack" }
+
+### post course with error
+POST http://localhost:3000/api/courses
+Content-Type: application/json
+
+{ "name": "" }
+
+### put - update course
+PUT http://localhost:3000/api/courses/1
+Content-Type: application/json
+
+{ "name" : "Ramborii"}
+
+### put - update course
+PUT http://localhost:3000/api/courses/9
+Content-Type: application/json
+
+{ "name" : "Ramborii"}
+
+### put - update course
+PUT http://localhost:3000/api/courses/2
+Content-Type: application/json
+
+{ "name" : "a"}
+
+### delete - delete course
+DELETE http://localhost:3000/api/courses/1
+
+### get file content
+GET http://localhost:3000/static/readme.txt
+
